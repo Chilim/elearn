@@ -1,0 +1,16 @@
+{{#if user}}
+	<h5>Добро пожаловать {{user.username}}</h5>
+	<ul class="alt">
+	<li><a href="/{{type}}s/classes">Мои курсы</a></li>
+	<li><a href="/users/logout">Выйти</a></li>
+	</ul>
+{{else}}
+<h4>Вход для учителей и учеников</h4>
+	<form method="post" action="/users/login">
+		<label> Логин: </label>
+		<input type="text" name="username">
+		<label> Пароль: </label>
+		<input type="password" name="password">
+		<input type="submit" class="button" value="Login">
+	</form>
+{{/if}}

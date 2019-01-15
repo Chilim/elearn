@@ -1,0 +1,18 @@
+<h2>Добавить урок</h2>
+<form id="regForm" method="post" action="/instructors/classes/{{class_id}}/lessons/new">
+	<div>
+		<label>Урок №: </label>
+		<input type="text" name="lesson_number">
+	</div><br />
+	<div>
+		<label>Тема: </label>
+		<input type="text" name="lesson_title">
+	</div><br />
+	<div>
+		<label>Описание: </label>
+		<textarea name="lesson_body"></textarea>
+	</div><br />
+	<div>
+		<input type="submit" value="Сохранить">
+	</div>
+</form>
